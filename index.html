@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Palette Saby</title>
+
+<style>
+body{
+  margin:0;
+  background:#050505;
+  font-family:Arial, sans-serif;
+}
+
+/* CONTAINER */
+.saby-wrap{
+  max-width:1100px;
+  margin:40px auto;
+  padding:30px;
+  border-radius:24px;
+  background: radial-gradient(circle at top, #1a1a1a, #0b0b0b);
+  color:#f5f5f5;
+  box-shadow:0 0 40px rgba(255,77,141,0.15);
+}
+
+/* TITRE */
+.saby-title{
+  text-align:center;
+  color:#ff4d8d;
+  font-size:32px;
+  text-shadow:0 0 20px rgba(255,77,141,0.4);
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+  gap:15px;
+  margin-top:20px;
+}
+
+/* CHIP */
+.chip{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:12px;
+  border-radius:16px;
+  background:rgba(255,255,255,0.05);
+  transition:0.2s;
+}
+
+.chip:hover{
+  transform:translateY(-5px);
+  box-shadow:0 0 20px rgba(255,77,141,0.3);
+}
+
+.dot{
+  width:22px;
+  height:22px;
+  border-radius:50%;
+}
+
+/* TITRE SECTION */
+h3{
+  color:#ff4d8d;
+  margin-top:30px;
+}
+</style>
+
+</head>
+<body>
+
+<div class="saby-wrap">
+  <h1 class="saby-title">Palette Saby 🖤</h1>
+
+  <h3>PLA Mat</h3>
+  <div class="grid">
+    <div class="chip"><div class="dot" style="background:#2E2E2E"></div>Noir mat</div>
+    <div class="chip"><div class="dot" style="background:#F2EEE6"></div>Blanc ivoire</div>
+    <div class="chip"><div class="dot" style="background:#E8E2D8"></div>Blanc os</div>
+    <div class="chip"><div class="dot" style="background:#9A9A96"></div>Gris cendre</div>
+    <div class="chip"><div class="dot" style="background:#7F8287"></div>Gris nardo</div>
+    <div class="chip"><div class="dot" style="background:#E3A4B3"></div>Rose sakura</div>
+    <div class="chip"><div class="dot" style="background:#253B64"></div>Bleu foncé</div>
+    <div class="chip"><div class="dot" style="background:#2F4A33"></div>Vert foncé</div>
+  </div>
+
+  <h3>PLA Basic</h3>
+  <div class="grid">
+    <div class="chip"><div class="dot" style="background:#000"></div>Noir</div>
+    <div class="chip"><div class="dot" style="background:#FFF"></div>Blanc</div>
+    <div class="chip"><div class="dot" style="background:#A8A8A8"></div>Gris</div>
+    <div class="chip"><div class="dot" style="background:#C62828"></div>Rouge</div>
+    <div class="chip"><div class="dot" style="background:#1E88E5"></div>Bleu</div>
+    <div class="chip"><div class="dot" style="background:#43A047"></div>Vert</div>
+  </div>
+
+</div>
+
+</body>
+</html>

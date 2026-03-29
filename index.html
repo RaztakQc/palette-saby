@@ -1,11 +1,23 @@
-<div style="margin:auto; max-width:1200px; font-family:Arial, sans-serif;">
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Palette Saby</title>
+
 <style>
-body{margin:0;background:#050505;}
+body{
+  margin:0;
+  background:#050505;
+  font-family:Arial, sans-serif;
+}
 
 .saby-wrap{
-  background: radial-gradient(circle at top, #1a1a1a, #0b0b0b);
-  border-radius:24px;
+  max-width:1200px;
+  margin:40px auto;
   padding:30px;
+  border-radius:24px;
+  background: radial-gradient(circle at top, #1a1a1a, #0b0b0b);
   color:#f5f5f5;
   box-shadow:0 0 40px rgba(255,77,141,0.15);
 }
@@ -14,17 +26,17 @@ body{margin:0;background:#050505;}
   text-align:center;
   color:#ff4d8d;
   font-size:32px;
-  margin-bottom:10px;
   text-shadow:0 0 20px rgba(255,77,141,0.4);
 }
 
-.saby-grid{
+.grid{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+  grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
   gap:12px;
+  margin-top:15px;
 }
 
-.saby-chip{
+.chip{
   display:flex;
   align-items:center;
   gap:10px;
@@ -34,7 +46,7 @@ body{margin:0;background:#050505;}
   transition:0.2s;
 }
 
-.saby-chip:hover{
+.chip:hover{
   transform:translateY(-4px);
   box-shadow:0 0 18px rgba(255,77,141,0.25);
 }
@@ -47,80 +59,97 @@ body{margin:0;background:#050505;}
 }
 
 h3{
-  margin-top:25px;
+  margin-top:30px;
   color:#ff4d8d;
 }
 </style>
+</head>
 
+<body>
 <div class="saby-wrap">
-<h2 class="saby-title">Palette Saby 🖤</h2>
+<h1 class="saby-title">Palette Saby 🖤</h1>
 
+<!-- PLA MAT -->
 <h3>PLA Mat</h3>
-<div class="saby-grid">
+<div class="grid">
 
-<div class="saby-chip"><div class="dot" style="background:#2E2E2E"></div>Noir mat</div>
-<div class="saby-chip"><div class="dot" style="background:#F2EEE6"></div>Blanc ivoire</div>
-<div class="saby-chip"><div class="dot" style="background:#E8E2D8"></div>Blanc os</div>
-<div class="saby-chip"><div class="dot" style="background:#9A9A96"></div>Gris cendre</div>
-<div class="saby-chip"><div class="dot" style="background:#7F8287"></div>Gris nardo</div>
+<div class="chip"><div class="dot" style="background:#FFFFFF"></div>Ivory White</div>
+<div class="chip"><div class="dot" style="background:#F4F1EA"></div>Bone White</div>
+<div class="chip"><div class="dot" style="background:#D2B48C"></div>Desert Tan</div>
+<div class="chip"><div class="dot" style="background:#A67B5B"></div>Latte Brown</div>
+<div class="chip"><div class="dot" style="background:#C68642"></div>Caramel</div>
+<div class="chip"><div class="dot" style="background:#B15533"></div>Terracotta</div>
+<div class="chip"><div class="dot" style="background:#5C4033"></div>Dark Brown</div>
+<div class="chip"><div class="dot" style="background:#3B2F2F"></div>Dark Chocolate</div>
 
-<div class="saby-chip"><div class="dot" style="background:#E3A4B3"></div>Rose sakura</div>
-<div class="saby-chip"><div class="dot" style="background:#A86A8E"></div>Rose vieux</div>
+<div class="chip"><div class="dot" style="background:#B57EDC"></div>Lilac Purple</div>
+<div class="chip"><div class="dot" style="background:#E8AFCF"></div>Sakura Pink</div>
+<div class="chip"><div class="dot" style="background:#FF8C42"></div>Mandarin Orange</div>
+<div class="chip"><div class="dot" style="background:#FFD700"></div>Lemon Yellow</div>
 
-<div class="saby-chip"><div class="dot" style="background:#253B64"></div>Bleu foncé</div>
-<div class="saby-chip"><div class="dot" style="background:#2E5D8A"></div>Bleu marine</div>
-<div class="saby-chip"><div class="dot" style="background:#7DB7E8"></div>Bleu ciel</div>
-<div class="saby-chip"><div class="dot" style="background:#BFD9E8"></div>Bleu glacé</div>
+<div class="chip"><div class="dot" style="background:#6B3A5B"></div>Plum</div>
+<div class="chip"><div class="dot" style="background:#C12E1F"></div>Scarlet Red</div>
+<div class="chip"><div class="dot" style="background:#8B0000"></div>Dark Red</div>
 
-<div class="saby-chip"><div class="dot" style="background:#2F4A33"></div>Vert foncé</div>
-<div class="saby-chip"><div class="dot" style="background:#7AA34B"></div>Vert pomme</div>
-<div class="saby-chip"><div class="dot" style="background:#4E7A3D"></div>Vert herbe</div>
+<div class="chip"><div class="dot" style="background:#013220"></div>Dark Green</div>
+<div class="chip"><div class="dot" style="background:#4CAF50"></div>Grass Green</div>
+<div class="chip"><div class="dot" style="background:#8BC34A"></div>Apple Green</div>
 
-<div class="saby-chip"><div class="dot" style="background:#D86B2D"></div>Orange mandarine</div>
-<div class="saby-chip"><div class="dot" style="background:#B83232"></div>Rouge écarlate</div>
-<div class="saby-chip"><div class="dot" style="background:#6E1F24"></div>Rouge foncé</div>
+<div class="chip"><div class="dot" style="background:#BFD9E8"></div>Ice Blue</div>
+<div class="chip"><div class="dot" style="background:#7DB7E8"></div>Sky Blue</div>
+<div class="chip"><div class="dot" style="background:#0078BF"></div>Marine Blue</div>
+<div class="chip"><div class="dot" style="background:#042F56"></div>Dark Blue</div>
 
-<div class="saby-chip"><div class="dot" style="background:#E8D84A"></div>Jaune citron</div>
-<div class="saby-chip"><div class="dot" style="background:#C6A27A"></div>Beige désert</div>
-
-<div class="saby-chip"><div class="dot" style="background:#A85A46"></div>Terre cuite</div>
-<div class="saby-chip"><div class="dot" style="background:#8A624C"></div>Brun latte</div>
-<div class="saby-chip"><div class="dot" style="background:#3E2B24"></div>Chocolat foncé</div>
-<div class="saby-chip"><div class="dot" style="background:#A86A3D"></div>Caramel</div>
-
-<div class="saby-chip"><div class="dot" style="background:#6B3A5B"></div>Prune</div>
-<div class="saby-chip"><div class="dot" style="background:#A78AC8"></div>Violet lilas</div>
+<div class="chip"><div class="dot" style="background:#9A9A96"></div>Ash Gray</div>
+<div class="chip"><div class="dot" style="background:#7F8287"></div>Nardo Gray</div>
+<div class="chip"><div class="dot" style="background:#000000"></div>Charcoal</div>
 
 </div>
 
+<!-- PLA BASIC -->
 <h3>PLA Basic</h3>
-<div class="saby-grid">
+<div class="grid">
 
-<div class="saby-chip"><div class="dot" style="background:#000"></div>Noir</div>
-<div class="saby-chip"><div class="dot" style="background:#FFFFFF"></div>Blanc</div>
-<div class="saby-chip"><div class="dot" style="background:#A8A8A8"></div>Gris</div>
+<div class="chip"><div class="dot" style="background:#FFFFFF"></div>Jade White</div>
+<div class="chip"><div class="dot" style="background:#000000"></div>Black</div>
+<div class="chip"><div class="dot" style="background:#C12E1F"></div>Red</div>
+<div class="chip"><div class="dot" style="background:#0A2989"></div>Blue</div>
+<div class="chip"><div class="dot" style="background:#8E9089"></div>Gray</div>
+<div class="chip"><div class="dot" style="background:#FFD700"></div>Yellow</div>
+<div class="chip"><div class="dot" style="background:#4CAF50"></div>Green</div>
+<div class="chip"><div class="dot" style="background:#FF8C00"></div>Orange</div>
 
-<div class="saby-chip"><div class="dot" style="background:#C62828"></div>Rouge</div>
-<div class="saby-chip"><div class="dot" style="background:#FF7043"></div>Orange</div>
-<div class="saby-chip"><div class="dot" style="background:#FDD835"></div>Jaune</div>
+<div class="chip"><div class="dot" style="background:#8B4513"></div>Brown</div>
+<div class="chip"><div class="dot" style="background:#F5F5DC"></div>Beige</div>
+<div class="chip"><div class="dot" style="background:#00BCD4"></div>Cyan</div>
+<div class="chip"><div class="dot" style="background:#9C27B0"></div>Purple</div>
+<div class="chip"><div class="dot" style="background:#FF69B4"></div>Pink</div>
 
-<div class="saby-chip"><div class="dot" style="background:#43A047"></div>Vert</div>
-<div class="saby-chip"><div class="dot" style="background:#2E7D32"></div>Vert foncé</div>
+<div class="chip"><div class="dot" style="background:#D3D3D3"></div>Light Gray</div>
+<div class="chip"><div class="dot" style="background:#607D8B"></div>Blue Grey</div>
+<div class="chip"><div class="dot" style="background:#6F4E37"></div>Cocoa Brown</div>
 
-<div class="saby-chip"><div class="dot" style="background:#1E88E5"></div>Bleu</div>
-<div class="saby-chip"><div class="dot" style="background:#0D47A1"></div>Bleu foncé</div>
-<div class="saby-chip"><div class="dot" style="background:#81D4FA"></div>Bleu clair</div>
+<div class="chip"><div class="dot" style="background:#C0C0C0"></div>Silver</div>
+<div class="chip"><div class="dot" style="background:#FFD700"></div>Gold</div>
+<div class="chip"><div class="dot" style="background:#CD7F32"></div>Bronze</div>
 
-<div class="saby-chip"><div class="dot" style="background:#8E24AA"></div>Violet</div>
-<div class="saby-chip"><div class="dot" style="background:#F06292"></div>Rose</div>
+<div class="chip"><div class="dot" style="background:#00FF00"></div>Bright Green</div>
+<div class="chip"><div class="dot" style="background:#FF00FF"></div>Magenta</div>
+<div class="chip"><div class="dot" style="background:#40E0D0"></div>Turquoise</div>
 
-<div class="saby-chip"><div class="dot" style="background:#6D4C41"></div>Brun</div>
-<div class="saby-chip"><div class="dot" style="background:#A1887F"></div>Brun clair</div>
+<div class="chip"><div class="dot" style="background:#4B0082"></div>Indigo Purple</div>
+<div class="chip"><div class="dot" style="background:#FF1493"></div>Hot Pink</div>
+<div class="chip"><div class="dot" style="background:#FFC107"></div>Sunflower Yellow</div>
 
-<div class="saby-chip"><div class="dot" style="background:#C0C0C0"></div>Argent</div>
-<div class="saby-chip"><div class="dot" style="background:#FFD700"></div>Or</div>
+<div class="chip"><div class="dot" style="background:#228B22"></div>Mistletoe Green</div>
+<div class="chip"><div class="dot" style="background:#FF7518"></div>Pumpkin Orange</div>
+<div class="chip"><div class="dot" style="background:#009E60"></div>Bambu Green</div>
+
+<div class="chip"><div class="dot" style="background:#800000"></div>Maroon Red</div>
+<div class="chip"><div class="dot" style="background:#0047AB"></div>Cobalt Blue</div>
 
 </div>
 
 </div>
-</div>
+</body>
+</html>
